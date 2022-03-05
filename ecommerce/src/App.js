@@ -1,8 +1,8 @@
 
-import './App.css';
 import { ApolloProvider, ApolloClient, InMemoryCache ,HttpLink,from } from "@apollo/client";
 import {onError} from '@apollo/client/link/error'
 import GetCategories from './Components/GetCategories';
+import Navbar from './Components/Navbar';
 const errorLink = onError(({graphqlErrors,networkErrror})=>{
   if(graphqlErrors){
     graphqlErrors.map(({message,location,path})=>{
@@ -20,7 +20,9 @@ const client = new ApolloClient({
 })
 function App() {
   return <ApolloProvider client={client}>
-        <GetCategories/>
+    <div className="grid-container">
+  <Navbar/>
+  </div>
   </ApolloProvider>
 }
 export default App;
