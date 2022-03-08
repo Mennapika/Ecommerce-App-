@@ -1,19 +1,24 @@
 import React, { useEffect } from 'react'
 import { useQuery,gql} from "@apollo/client"
 import{LOAD_PRODUCT } from "../GraphQl/Queries"
-import { useDispatch } from 'react-redux'
-import {setProducts} from "../containers/redux/actions/productActions"
+import { useDispatch, useSelector } from 'react-redux'
+import {setProducts,fetchProdducts} from "../containers/redux/actions/productActions"
+import ProductCard from './ProductCard'
 
 function ProductListing() {
+   
     const dispatch = useDispatch();
-    const{error,loading,data}=useQuery(LOAD_PRODUCT )
-    dispatch(setProducts(data.categories[0].products))
+    
     useEffect(()=>{
-        console.log(data);
-    },[data])
+      dispatch(fetchProdducts())
+    },[])
     
   return (
-    <div>productListing</div>
+    <div>
+      product
+        <ProductCard/>
+    </div>
+    
   )
 }
 

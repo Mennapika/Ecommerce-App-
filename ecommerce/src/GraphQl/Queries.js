@@ -8,15 +8,15 @@ query{
 `;
 export const LOAD_PRODUCT =gql`
 query{
-    categories{
-      products{name , id ,category , inStock ,gallery , description, brand,prices{
-        currency{
-          label
-          symbol
-        }
-        amount
-      }},
-      
-    }
-    }
+  category{
+    products{name , id ,category , inStock ,gallery , description, brand,prices{
+      currency{
+        label
+        symbol
+      }
+      amount
+    }},
+    
+  }
+  }
 `;

@@ -1,0 +1,42 @@
+.directory-nav{
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  color: #1D1F22;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  .directory-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .directory-item{
+    font-size: 1rem;
+    margin: 1em;
+    transition: ease-in 0.2s;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #1D1F22;
+    &:hover{
+    color: #5ECE7B;
+    position: relative;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #5ECE7B;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    &:hover::after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+  }
+}
