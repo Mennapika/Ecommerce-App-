@@ -11,7 +11,9 @@ const  Navbar=()=> {
   return (
     <div className='navbar--container'>
     <Directory/>
+    <Link to="/"  className="logo--container">
     <img className="logo"src={require('../NavBar/logo.png')}/>
+    </Link>
     <div className='icon--container'>
     <FontAwesomeIcon icon={faDollarSign} className="dollar navbar---item"></FontAwesomeIcon>
     <FontAwesomeIcon icon={faChevronDown} className="arrow navbar---item"></FontAwesomeIcon>

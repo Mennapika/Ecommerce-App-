@@ -1,0 +1,36 @@
+.navbar--container{
+    grid-area: header;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    color: #1D1F22;
+    padding: 0;
+    margin: 0;
+ 
+  .logo{
+    margin-right: 3em;
+    height: 60%;
+    justify-self: center;
+  }
+  .icon--container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart{
+    font-size: 1.5rem;
+    margin-right: 5em;
+    margin-top: 0.9em;
+  }
+  .dollar {
+    font-size: 1rem;
+    margin-top: 1.5em;
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .arrow{
+    margin-top: 3em;
+    font-size: 0.6rem;
+    margin-right: 6em;
+  }
+}

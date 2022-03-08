@@ -1,15 +1,18 @@
 .directory-nav{
   background-color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   color: #1D1F22;
   padding: 0;
-  margin: 0;
-  width: 100%;
+  margin: 9px;
+  width: 26%;;
+
   .directory-list{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    
+
   }
   .directory-item{
     font-size: 1rem;
