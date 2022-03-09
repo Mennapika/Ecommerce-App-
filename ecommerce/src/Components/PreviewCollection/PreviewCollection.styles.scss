@@ -1,7 +1,7 @@
 .preview-collection-container{
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 0px 50px 50px 50px;
 .preview-collection-Catrgory{
     font-size: 28px;
     margin-bottom: 25px;
@@ -11,6 +11,8 @@
 .preview-collection-preview{
     display: flex;
     justify-content: space-between;
+    margin: 10px;
+    margin-bottom: 50px;
 }
 
 
