@@ -1,16 +1,21 @@
-import React from 'react'
-import "../CustomButton/CustomButton.styles.scss"
-import "../CustomButton/CustomButton.styles.scss"
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faCartPlus} from "@fortawesome/free-solid-svg-icons"
+import React from 'react';
 
+import './CustomButton.styles.scss';
 
- const CustomButton = ({childern,...otherProps}) => {
-  return (
-    <button className='custom-button' {...otherProps}>
-      {childern}
-      <FontAwesomeIcon icon={faCartPlus} className="cart-button"></FontAwesomeIcon>
-    </button>
-  )
-}
+const CustomButton = ({
+  children,
+  isGoogleSignIn,
+  inverted,
+  ...otherProps
+}) => (
+  <button
+    className={`${inverted ? 'inverted' : ''} ${
+      isGoogleSignIn ? 'google-sign-in' : ''
+    } custom-button`}
+    {...otherProps}
+  >
+    {children}
+  </button>
+);
+
 export default CustomButton;

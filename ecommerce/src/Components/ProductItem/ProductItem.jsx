@@ -13,7 +13,7 @@ const ProductItem=({id,name,price,gallery})=>{
       <span className='product-item-name'>{name}</span>
       <span className='product-item-price'>${price}</span>
   </div>
-  <CustomButton/>
+  <button className='prodct-item-button'><FontAwesomeIcon icon={faCartPlus} className="cart-button"></FontAwesomeIcon></button>
 </div>)
     
 }

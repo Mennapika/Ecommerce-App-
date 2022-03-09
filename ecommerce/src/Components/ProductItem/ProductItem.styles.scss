@@ -15,7 +15,7 @@
         box-shadow: 2px 2px rgb(177, 174, 174);
         padding: 1.3em;
         overflow: hidden;
-        .custom-button{
+        .prodct-item-button{
             display: block;
         }
     }
@@ -44,10 +44,20 @@
               font-weight: 600;
             }
           }
-          .custom-button{
+          .prodct-item-button{
               position: absolute;
               top:325px;
               right:50px;
+              display: none;
+              padding: 15px 15px ;
+              border-radius: 60%;
+              background-color:#5ECE7B; ;
+              color: #fff;
+              font-size: 1rem;
+              border: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
               display: none;
           }
     }

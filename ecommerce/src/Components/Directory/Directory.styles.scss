@@ -4,8 +4,8 @@
   justify-content: space-around;
   color: #1D1F22;
   padding: 0;
-  margin: 9px;
-  width: 26%;;
+  margin: 0;
+  width: 30%;
 
   .directory-list{
     list-style: none;
@@ -16,7 +16,7 @@
   }
   .directory-item{
     font-size: 1rem;
-    margin: 1em;
+    margin: 2em;
     transition: ease-in 0.2s;
     text-transform: capitalize;
     text-decoration: none;

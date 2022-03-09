@@ -1,26 +1,31 @@
 .navbar--container{
-    grid-area: header;
     background-color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #1D1F22;
     padding: 0;
-    margin:9px;
     margin-top: 15px;
+    margin-bottom: 60px;
  
   .logo{
-    margin-right: 2em;
-    height: 60%;
     justify-self: center;
   }
+  .filter-green{
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    margin-top: 20px;
+    margin-left: 6em;
+}
+
   .icon--container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: relative;
+    margin-left: 12em;
   }
   .cart{
     font-size: 1.5rem;
     margin-right: 5em;
-    margin-top: 0.9em;
+    margin-top: 5em;
   }
   .dollar {
     font-size: 1rem;
